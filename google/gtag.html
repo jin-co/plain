@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ======================== UA ======================== -->
+
+  <!-- **Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-236816742-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-236816742-1');
+    // gtag('config', 'UA-236816742-1', { // adding global parameters
+    //   additional_parameter: 'global parameter gets added to every page'
+    // });
+  </script>
+
+  <script> // **action tracking config
+    // for UA I cannot add more parameters
+    gtag('event', '<action>', {
+      event_category: '<category>', // *required
+      event_label: '<label>', // optional
+      value: '<value>' // optional
+    });
+  </script>
+
+  <!-- **action tracking config with event -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('button.purchase').addEventListener('click', () => {
+        gtag('event', 'click', {
+          event_category: 'btn_event',
+        })
+      })
+    })
+  </script>
+
+  <!-- ------------------------------------------------------------ -->
+
+  <!-- ======================== GA4 ======================== -->
+  <!-- **Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYM9CT5ZHT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-LYM9CT5ZHT');
+  </script>
+
+  <script> // **action tracking config
+    // for GA I can add parameters    
+    gtag('event', '<event_name>', {
+      parameter_name: '<parameter_value>',
+    });
+  </script>
+
+  <!-- **action tracking config with event -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.purchase').addEventListener('click', () => {
+        gtag('event', 'purchase click', {
+          version: '1',
+        })
+      })
+    })
+  </script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('button.purchase').addEventListener('click', () => {
+        gtag('event', 'btn_click_event', {
+          btn_click: 'add',
+        });
+      })
+    })
+  </script>
+
+  <!-- Contact form-7 -->
+  <script>
+    window.addEventListener('load', function () {
+      document.addEventListener('wpcf7mailsent', function (event) {
+        if (event.detail.contactFormId == 165) {
+          gtag('event', '예약', {
+            'event_category': '신청하기'
+          });
+        }
+      }, false);
+    });
+  </script>
+
+  <!-- google ad, others -->
+  <script>
+    gtag('event', 'conversion', { 'send_to': 'AW-665168002/FKL1CLyLqKUDEILRlr0C' });
+  </script>
+
+  <script>
+    window.addEventListener('load', function () {
+      document.addEventListener('wpcf7mailsent', function (event) {
+        if (event.detail.contactFormId == 165) {
+          gtag('event', '예약', {
+            'event_category': '신청하기'
+          }); // analytics
+          gtag('event', 'conversion', { 'send_to': 'AW-665168002/FKL1CLyLqKUDEILRlr0C' }); // ads
+          dataLayer.push({ 'event': '예약하기' });
+        }
+      }, false);
+    });
+  </script>
+
+  <script>
+    dataLayer.push({ 'event': 'event_name' });
+  </script>
+
+  <script>
+    window.addEventListener('load', function () {
+      document.addEventListener('wpcf7mailsent', function (event) {
+        if (event.detail.contactFormId == 165) {
+          gtag('event', '예약', {
+            'event_category': '신청하기'
+          });
+          gtag('event', 'conversion', { 'send_to': 'AW-665168002/FKL1CLyLqKUDEILRlr0C' });
+        }
+      }, false);
+    });
+  </script>
+
+  <script>
+    window.addEventListener('load', function () {
+      document.addEventListener('wpcf7mailsent', function (event) {
+        if (event.detail.contactFormId == 165) {
+          gtag('event', '예약', {
+            'event_category': '신청하기'
+          });
+        }
+      }, false);
+    });
+  </script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script>
+    jQuery(document).ready(function () {
+      jQuery(document).on('nfFormSubmitResponse', function () {
+        gtag('event', 'ninja form_submit', {
+          ninja_form: 'success',
+        })
+      });
+    });
+  </script>
+
+  <!-- **chat box -->
+  <!--Start of Tawk.to Script-->
+  <script
+    type="text/javascript"> var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date(); (function () { var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0]; s1.async = true; s1.src = 'https://embed.tawk.to/5fccd219a1d54c18d8f0eb69/default'; s1.charset = 'UTF-8'; s1.setAttribute('crossorigin', '*'); s0.parentNode.insertBefore(s1, s0); })(); </script>
+  <!--End of Tawk.to Script-->
+
+  <!-- ======================== Enhanced ======================== -->
+
+  <!-- **Enhanced E-commerce -->
+  <!-- view_item (e.g. product details page) -->
+  <script> // UA
+    gtag('event', 'view_item', {
+      'items': [
+        {
+          'id': '',
+          'name': '',
+          'list_name': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'list_position': 0,
+          'quantity': 0,
+          'price': '0',
+        }
+      ]
+    });
+  </script>
+
+  <script> // GTM
+    dataLayer.push({
+      'event': 'view_item',
+      'ecommerce': {
+        'details': {
+          'products': [{
+            'name': '',
+            'id': '',
+            'price': '',
+            'brand': '',
+            'category': '',
+            'variant': '',
+          }]
+        }
+      }
+    })    
+  </script>
+
+  <!-- add_to_cart (e.g. add to cart button) -->
+  <script> // UA
+    gtag('event', 'add_to_cart', {
+      'items': [
+        {
+          'id': '',
+          'name': '',
+          'list_name': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'list_position': 0,
+          'quantity': 0,
+          'price': '0',
+        }
+      ]
+    });
+  </script>
+
+  <script> // GTM
+    dataLayer.push({
+      'event': 'add_to_cart',
+      'ecommerce': {
+        'currencyCode': '',
+        'add': {
+          'products': [{
+            'name': '',
+            'id': '',
+            'price': '',
+            'brand': '',
+            'category': '',
+            'variant': '',
+            'quantity': 0,
+          }]
+        }
+      }
+    })
+  </script>
+
+  <!-- begin_checkout (e.g. add to cart button) -->
+  <script> // UA
+    gtag('event', 'begin_checkout', {
+      'items': [
+        {
+          'id': '',
+          'name': '',
+          'list_name': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'list_position': 0,
+          'quantity': 0,
+          'price': '0',
+        }
+      ]
+    });
+  </script>
+
+  <script> // GTM
+    dataLayer.push({
+      'event': 'begin_checkout',
+      'ecommerce': {
+        'checkout': '',
+        'actionField': { 'step': 1, 'option': '' },
+        'products': [{
+          'name': '',
+          'id': '',
+          'price': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'quantity': 0,
+        }]
+      }
+    })
+  </script>
+
+    <!-- begin_checkout (e.g. add to cart button) -->
+    <script> // UA
+      gtag('event', 'begin_checkout', {
+        'items': [
+          {
+            'id': '',
+            'name': '',
+            'list_name': '',
+            'brand': '',
+            'category': '',
+            'variant': '',
+            'list_position': 0,
+            'quantity': 0,
+            'price': '0',
+          }
+        ]
+      });
+    </script>
+  
+    <script> // GTM
+      dataLayer.push({
+        'event': 'begin_checkout',
+        'ecommerce': {
+          'checkout': '',
+          'actionField': { 'step': 1, 'option': '' },
+          'products': [{
+            'name': '',
+            'id': '',
+            'price': '',
+            'brand': '',
+            'category': '',
+            'variant': '',
+            'quantity': 0,
+          }]
+        }
+      })
+    </script>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
