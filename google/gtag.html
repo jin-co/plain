@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <script>
+    // todo Analytics
+  </script>
   <!-- ======================== UA ======================== -->
 
   <!-- **Global site tag (gtag.js) - Google Analytics -->
@@ -160,11 +163,13 @@
     type="text/javascript"> var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date(); (function () { var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0]; s1.async = true; s1.src = 'https://embed.tawk.to/5fccd219a1d54c18d8f0eb69/default'; s1.charset = 'UTF-8'; s1.setAttribute('crossorigin', '*'); s0.parentNode.insertBefore(s1, s0); })(); </script>
   <!--End of Tawk.to Script-->
 
-  <!-- ======================== Enhanced ======================== -->
-
+  <script>
+    // todo Enhanced conversion
+  </script>
+  <!-- ======================== UA ======================== -->
   <!-- **Enhanced E-commerce -->
   <!-- view_item (e.g. product details page) -->
-  <script> // UA
+  <script> // gtag
     gtag('event', 'view_item', {
       'items': [
         {
@@ -201,7 +206,7 @@
   </script>
 
   <!-- add_to_cart (e.g. add to cart button) -->
-  <script> // UA
+  <script> // gtag
     gtag('event', 'add_to_cart', {
       'items': [
         {
@@ -240,7 +245,7 @@
   </script>
 
   <!-- begin_checkout (e.g. add to cart button) -->
-  <script> // UA
+  <script> // gtag
     gtag('event', 'begin_checkout', {
       'items': [
         {
@@ -277,43 +282,195 @@
     })
   </script>
 
-    <!-- begin_checkout (e.g. add to cart button) -->
-    <script> // UA
-      gtag('event', 'begin_checkout', {
-        'items': [
-          {
+  <!-- begin_checkout (e.g. add to cart button) -->
+  <script> // gtag
+    gtag('event', 'begin_checkout', {
+      'items': [
+        {
+          'id': '',
+          'name': '',
+          'list_name': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'list_position': 0,
+          'quantity': 0,
+          'price': '0',
+        }
+      ]
+    });
+  </script>
+
+  <script> // GTM
+    dataLayer.push({
+      'event': 'begin_checkout',
+      'ecommerce': {
+        'checkout': '',
+        'actionField': { 'step': 1, 'option': '' },
+        'products': [{
+          'name': '',
+          'id': '',
+          'price': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'quantity': 0,
+        }]
+      }
+    })
+  </script>
+
+  <!-- purchase (e.g. thank you page) -->
+  <script> // gtag
+    gtag('event', 'purchase', {
+      'transaction_id': '',
+      'affiliation': '',
+      'value': 0,
+      'currency': '',
+      'tax': 0,
+      'shipping': 0,
+      'items': [
+        {
+          'id': '',
+          'name': '',
+          'list_name': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'list_position': 0,
+          'quantity': 0,
+          'price': '0',
+        }
+      ]
+    });
+  </script>
+
+  <script> // GTM
+    dataLayer.push({
+      'event': 'purchase',
+      'ecommerce': {
+        'purchase': {
+          'actionField': {
             'id': '',
-            'name': '',
-            'list_name': '',
-            'brand': '',
-            'category': '',
-            'variant': '',
-            'list_position': 0,
-            'quantity': 0,
-            'price': '0',
+            'affiliation': '',
+            'revenue': '0',
+            'tax': '0',
+            'shipping': '0',
+            'coupon': '',
+          },
+        },
+        'products': [{
+          'name': '',
+          'id': '',
+          'price': '',
+          'brand': '',
+          'category': '',
+          'variant': '',
+          'quantity': 0,
+          'coupon': 0,
+        }]
+      }
+    })
+  </script>
+
+  <!-- ======================== GA4 ======================== -->
+  <!-- view_item (e.g. product details page) -->
+  <script> // gtag
+    gtag('event', 'view_item', {
+      currency: '',
+      items: [
+        {
+          item_id: '',
+          item_name: '',
+          index: 0,
+          item_brand: '',
+          item_category: '',
+          item_category2: '',
+          item_list_id: '',
+          item_list_name: '',
+          item_variant: '',
+          location_id: '',
+          list_position: 0,
+          price: 0,
+          quantity: 0,
+        }
+      ]
+    });
+  </script>
+
+  <script> // GTM
+    dataLayer.push({
+      event: 'view_item',
+      ecommerce: {
+        items: [
+          {
+            item_name: '',
+            item_id: '',
+            price: 0,
+            item_brand: '',
+            item_category: '',
+            item_category2: '',
+            item_variant: '',
+            item_list_name: '',
+            item_list_id: '',
+            location_id: '',
+            index: 0,
+            quantity: 0,
           }
         ]
-      });
-    </script>
-  
-    <script> // GTM
-      dataLayer.push({
-        'event': 'begin_checkout',
-        'ecommerce': {
-          'checkout': '',
-          'actionField': { 'step': 1, 'option': '' },
-          'products': [{
-            'name': '',
-            'id': '',
-            'price': '',
-            'brand': '',
-            'category': '',
-            'variant': '',
-            'quantity': 0,
-          }]
+      }
+    })    
+  </script>
+
+  <!-- purchase (e.g. thank you page) -->
+  <script> // gtag
+    gtag('event', 'purchase', {
+      currency: '',
+      transaction_id: '',
+      value: 0,
+      affiliation: '',
+      coupon: '',
+      shipping: 0,
+      tax: 0,
+      items: [
+        {
+          item_id: '',
+          item_name: '',
+          item_brand: '',
+          item_category: '',
+          item_list_id: '',
+          item_list_name: '',
+          item_variant: '',
+          price: 0,
+          quantity: 0,
         }
-      })
-    </script>
+      ]
+    });
+  </script>
+
+  <script> // GTM
+    dataLayer.push({
+      event: 'purchase',
+      ecommerce: {
+        transaction_id: '',
+        affiliation: '',
+        value: 0,
+        tax: 0,
+        shipping: 0,
+        currency: '',
+        coupon: '',
+        items: [{
+          item_name: '',
+          item_id: '',
+          price: 0,
+          item_brand: '',
+          item_category: '',
+          item_variant: '',
+          quantity: 0,
+        }]
+      }
+    })
+  </script>
 
   <title>Document</title>
 </head>
