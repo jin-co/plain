@@ -42,3 +42,7 @@ https://support.google.com/tagmanager/answer/7182738?hl=en
 ## Google ads
 - https://developers.google.com/google-ads
 - https://support.google.com/google-ads/#topic=10286612
+- how google ad manager works with google ads
+https://support.google.com/google-ads/answer/2472739?hl=en
+
+- 
