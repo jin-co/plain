@@ -19,8 +19,6 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 - tawk: https://developer.tawk.to/jsapi/
 
 # Links
-- Trigger types
-https://support.google.com/tagmanager/topic/7679108?hl=en&ref_topic=7679384
 
 ## GA4
 - events
@@ -41,3 +39,6 @@ https://support.google.com/tagmanager/topic/7679108?hl=en&ref_topic=7679384
 - built in variables
 https://support.google.com/tagmanager/answer/7182738?hl=en
 
+## Google ads
+- https://developers.google.com/google-ads
+- https://support.google.com/google-ads/#topic=10286612
