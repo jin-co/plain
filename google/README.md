@@ -22,12 +22,22 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 - Trigger types
 https://support.google.com/tagmanager/topic/7679108?hl=en&ref_topic=7679384
 
-- GA4
--- events
+## GA4
+- events
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
 
-- Analytics
--- https://developers.google.com/analytics?hl=en
+## Analytics
+- https://developers.google.com/analytics?hl=en
 
--- Events
+- Events
 https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
+
+## GTM
+https://support.google.com/tagmanager#topic=3441530
+
+- trigger types
+https://support.google.com/tagmanager/topic/7679108?hl=en&ref_topic=7679384
+
+- built in variables
+https://support.google.com/tagmanager/answer/7182738?hl=en
+
