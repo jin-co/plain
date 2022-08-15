@@ -17,7 +17,7 @@ document.querySelector('.wpcf7').addEventListener(
     })
   },
   false
-)
+) 
 
 document.addEventListener(
   'wpcf7submit',
