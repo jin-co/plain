@@ -45,4 +45,5 @@ https://support.google.com/tagmanager/answer/7182738?hl=en
 - how google ad manager works with google ads
 https://support.google.com/google-ads/answer/2472739?hl=en
 
-- 
+- attribution models
+https://support.google.com/google-ads/answer/6259715?hl=en-GB
