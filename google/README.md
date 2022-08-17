@@ -47,3 +47,6 @@ https://support.google.com/google-ads/answer/2472739?hl=en
 
 - attribution models
 https://support.google.com/google-ads/answer/6259715?hl=en-GB
+
+- maximize conversion
+https://support.google.com/google-ads/answer/7381968?hl=en
