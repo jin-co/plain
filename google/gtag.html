@@ -491,7 +491,11 @@
   </script>
 
   <script>
-
+    window.addEventListener('load', () => {
+      document.querySelector("#wpcf7-f17-p18-o1 > form > p:nth-child(6) > input").addEventListener('click', () => {
+        gtag('event', 'submitClick')
+      })
+    })
   </script>
 
   <title>Document</title>
