@@ -50,3 +50,11 @@ https://support.google.com/google-ads/answer/6259715?hl=en-GB
 
 - maximize conversion
 https://support.google.com/google-ads/answer/7381968?hl=en
+
+## Merchant
+- unsupported shopping content 
+https://support.google.com/merchants/answer/6150006
+
+- https://support.google.com/merchants/answer/6150151
+- https://support.google.com/merchants/answer/6165956
+- https://support.google.com/merchants/answer/9199328?hl=en
