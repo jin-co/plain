@@ -68,3 +68,11 @@ https://support.google.com/merchants/answer/160589?hl=en
 https://support.google.com/merchants/topic/7294002?hl=en&ref_topic=7294771
 
 https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt
+
+https://support.google.com/merchants/answer/6324478
+
+https://developers.google.com/search/docs/advanced/structured-data
+
+https://moz.com/blog/json-ld-for-beginners
+
+@lediemquynh
