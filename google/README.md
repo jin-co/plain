@@ -58,3 +58,13 @@ https://support.google.com/merchants/answer/6150006
 - https://support.google.com/merchants/answer/6150151
 - https://support.google.com/merchants/answer/6165956
 - https://support.google.com/merchants/answer/9199328?hl=en
+
+
+
+http://tagteam-tdcx.com/wp-content/uploads/woo-product-feed-pro/xml/SMwq5FNKv3l3tc1VMIwNbD1UYusvtOQT.xml
+
+https://support.google.com/merchants/answer/160589?hl=en
+
+https://support.google.com/merchants/topic/7294002?hl=en&ref_topic=7294771
+
+https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt
