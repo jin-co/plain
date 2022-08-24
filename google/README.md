@@ -61,14 +61,16 @@ https://support.google.com/merchants/answer/6150151
 - Unapproved pharmaceuticals and supplements
 https://support.google.com/merchants/answer/6165956
 
-- Show your products for free on Google
+- Show your products for free on Google (free listing attr)
 https://support.google.com/merchants/answer/9199328?hl=en
 
 - Link your Merchant Center account to a third-party platform
 https://support.google.com/merchants/answer/9843619
 
+- File upload (XML)
 http://tagteam-tdcx.com/wp-content/uploads/woo-product-feed-pro/xml/SMwq5FNKv3l3tc1VMIwNbD1UYusvtOQT.xml
 
+- File upload (RSS 2.0 specification)
 https://support.google.com/merchants/answer/160589?hl=en
 
 https://support.google.com/merchants/topic/7294002?hl=en&ref_topic=7294771
@@ -80,5 +82,8 @@ https://support.google.com/merchants/answer/6324478
 https://developers.google.com/search/docs/advanced/structured-data
 
 https://moz.com/blog/json-ld-for-beginners
+
+## SEO (Search Engine Optimization)
+https://developers.google.com/search/docs
 
 @lediemquynh
