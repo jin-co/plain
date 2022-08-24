@@ -61,9 +61,11 @@ https://support.google.com/merchants/answer/6150151
 - Unapproved pharmaceuticals and supplements
 https://support.google.com/merchants/answer/6165956
 
-- https://support.google.com/merchants/answer/9199328?hl=en
+- Show your products for free on Google
+https://support.google.com/merchants/answer/9199328?hl=en
 
-
+- Link your Merchant Center account to a third-party platform
+https://support.google.com/merchants/answer/9843619
 
 http://tagteam-tdcx.com/wp-content/uploads/woo-product-feed-pro/xml/SMwq5FNKv3l3tc1VMIwNbD1UYusvtOQT.xml
 
