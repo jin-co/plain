@@ -55,8 +55,12 @@ https://support.google.com/google-ads/answer/7381968?hl=en
 - unsupported shopping content 
 https://support.google.com/merchants/answer/6150006
 
-- https://support.google.com/merchants/answer/6150151
-- https://support.google.com/merchants/answer/6165956
+- Healthcare & medicines
+https://support.google.com/merchants/answer/6150151
+
+- Unapproved pharmaceuticals and supplements
+https://support.google.com/merchants/answer/6165956
+
 - https://support.google.com/merchants/answer/9199328?hl=en
 
 
