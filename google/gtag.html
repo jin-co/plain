@@ -476,7 +476,13 @@
 
 
   <script>
-
+    window.addEventListener('load', () => {
+      document.querySelector("#wpcf7-f17-p18-o1 > form").addEventListener('submit', () => {
+        gtag('event', 'homeworkFormSubmit', {
+          'event_category': 'ss'
+        })
+      })
+    })
   </script>
 
 
