@@ -487,6 +487,7 @@
 
 
 
+<!-- practice -->
   <script>
     if (window.location.href.indexOf("checkout/order-received/") > 0) {
       gtag('event', 'conversion', {
@@ -503,6 +504,17 @@
       document.querySelector("#wpcf7-f17-p18-o1 > form > p:nth-child(6) > input").addEventListener('click', () => {
         gtag('event', 'submitClick')
       })
+    })
+  </script>
+
+  <script>
+    window.addEventListener('load', () => {
+      window.Tawk_API = window.Tawk_API || {};
+      window.Tawk_API.onOfflineSubmit = function (data) {
+        gtag('event', 'chat box submit', {
+          chat_box: 'submitted'
+        })
+      };
     })
   </script>
 
