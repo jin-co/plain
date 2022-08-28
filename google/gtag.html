@@ -527,28 +527,40 @@
       })
     })
   </script>
-  
+
   <!-- gtag: 리포트 요청하기 <a> tag click -->
   <script>
     window.addEventListener('load', () => {
-      document.querySelector("#comp-l5xw8sts > a").addEventListener('click', () => {        
-  gtag('event', '리포트 요청하기', {'send_to': 'AW-10960335973/1UcZCLvjndkDEOXopeoo'});
-
+      document.querySelector("#comp-l5xvr8bm > a").addEventListener('click', () => {
+        gtag('event', '리포트 요청하기', { 'send_to': 'AW-10960335973/1UcZCLvjndkDEOXopeoo' });
       })
     })
   </script>
-  
+
   <!-- gtag: 문의버튼 클릭 <a> tag click -->
   <script>
     window.addEventListener('load', () => {
-      document.querySelector("#comp-l5xw8sts > a").addEventListener('click', () => {
-        
+      let inquiryEls = document.querySelectorAll('[href="mailto:ask@talentverse.co.kr"]')
 
-  gtag('event', '문의버튼 클릭', {'send_to': 'AW-10960335973/HdC_CNT3x9kDEOXopeoo'});
+      inquiryEls.forEach(el => {
+        el.addEventListener('click', () => {
+          gtag('event', '문의버튼 클릭', { 'send_to': 'AW-10960335973/HdC_CNT3x9kDEOXopeoo' });
+        })
+      });
+    })      
+  </script>
 
+  <!-- GTM: 프로필 등록 <a> tag click -->
+  <script>
+    window.addEventListener('load', () => {
+      let inquiryEls = document.querySelectorAll('[href="mailto:ask@talentverse.co.kr"]')
 
-      })
-    })
+      inquiryEls.forEach(el => {
+        el.addEventListener('click', () => {
+          gtag('event', '문의버튼 클릭', { 'send_to': 'AW-10960335973/HdC_CNT3x9kDEOXopeoo' });
+        })
+      });
+    })      
   </script>
 
   <title>Document</title>
