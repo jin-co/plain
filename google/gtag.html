@@ -567,19 +567,22 @@
   <!-- gtag: 네이버 구매 <a> tag click -->
   <script>
     window.addEventListener('load', () => {
-      document.querySelector("#comp-l5xw8sts > a").addEventListener('click', () => {
-        <!-- Event snippet for 네이버페이 구매 conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
-      'value': 1.0,
-      'currency': 'KRW',
-      'transaction_id': ''
-  });
-</script>
+      if (window.location.href.indexOf('product/detail.html') > 0) {
+        document.querySelector("#NPAY_BUTTON_BOX_ID > div.npay_button > table > tbody > tr > td:nth-child(1) a").addEventListener('click', () => {
+          if (document.querySelectorAll('.option_product').length > 0) {            
+            const value = +document.querySelector("#totalPrice > span > strong > em > font > font").innerText.split(' ')[0]
+            const id = document.querySelector("#NPAY_BUTTON_BOX_ID > div.npay_button > table > tbody > tr > td:nth-child(1) a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
 
-      })
-    })
+            gtag('event', '네이버 구매', {
+              'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
+              'value': value,
+              'currency': 'KRW',
+              'transaction_id': id
+            });
+          }
+        })
+      }
+    })    
   </script>
 
   <title>Document</title>
