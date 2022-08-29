@@ -570,7 +570,7 @@
       if (window.location.href.indexOf('product/detail.html') > 0) {
         document.querySelector("#NPAY_BUTTON_BOX_ID > div.npay_button > table > tbody > tr > td:nth-child(1) a").addEventListener('click', () => {
           if (document.querySelectorAll('.option_product').length > 0) {
-            const value = +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g,'')
+            const value = +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g, '')
             const id = document.querySelector("#NPAY_BUTTON_BOX_ID > div.npay_button > table > tbody > tr > td:nth-child(1) a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
 
             gtag('event', '네이버 구매', {
@@ -591,7 +591,7 @@
       if (window.location.href.indexOf('product/detail.html') > 0) {
         document.querySelector("#NPAY_BUTTON_BOX_ID > div.npay_button > table > tbody > tr > td:nth-child(1) a").addEventListener('click', () => {
           if (document.querySelectorAll('.option_product').length > 0) {
-            const value = +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g,'')
+            const value = +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g, '')
             const id = document.querySelector("#NPAY_BUTTON_BOX_ID > div.npay_button > table > tbody > tr > td:nth-child(1) a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
 
             dataLayer.push({
@@ -605,33 +605,33 @@
       }
     })        
   </script>
-  
-<script>
-    window.addEventListener('load', function(event) {
-      if (document.querySelector('.npay_btn_item')) {
-          if (window.location.href.includes('/basket.html')) {
-              document.querySelector('.npay_btn_item').addEventListener('click', function() {
-alert('ssss');
-                  gtag('event', 'conversion', {
-                       'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
-                       'value': document.querySelector('.prdTotal').innerText.replace(/\W+/g,''),
-                       'currency': 'KRW'
-                  });
-              });
-          }
-          else {
-              document.querySelector('.npay_btn_item').addEventListener('click', function() {
-alert('ssss');
-                  gtag('event', 'conversion', {
-                       'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
-                       'value': document.querySelector('.total').innerText.replace(/\W+/g, '').slice(0,-1),
-                       'currency': 'KRW'
-                  });
-              });
-          }
-      };
-    });
-  </script>
+
+  <script>
+    window.addEventListener('load', function (event) {
+      if (document.querySelector('.npay_btn_item')) {
+        if (window.location.href.includes('/basket.html')) {
+          document.querySelector('.npay_btn_item').addEventListener('click', function () {
+            alert('ssss');
+            gtag('event', 'conversion', {
+              'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
+              'value': document.querySelector('.prdTotal').innerText.replace(/\W+/g, ''),
+              'currency': 'KRW'
+            });
+          });
+        }
+        else {
+          document.querySelector('.npay_btn_item').addEventListener('click', function () {
+            alert('ssss');
+            gtag('event', 'conversion', {
+              'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
+              'value': document.querySelector('.total').innerText.replace(/\W+/g, '').slice(0, -1),
+              'currency': 'KRW'
+            });
+          });
+        }
+      };
+    });
+  </script>
 
 
   <title>Document</title>
