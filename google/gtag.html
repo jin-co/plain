@@ -585,7 +585,37 @@
     })    
   </script>
 
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+        if (document.querySelectorAll('.option_product').length > 0) {
+          gtag('event', '네이버 구매', {
+            'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
+            'value': +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g, ''),
+            'currency': 'KRW',
+            'transaction_id': document.querySelector(".npay_btn_item a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
+          });
+        }
+      })
+    })    
+  </script>
+
   <!-- GTM: 네이버 구매 <a> tag click -->
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+        if (document.querySelectorAll('.option_product').length > 0) {
+          dataLayer.push({
+            'event': '네이버 구매',
+            'value': +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g, ''),
+            'currency': 'KRW',
+            'transaction_id': document.querySelector(".npay_btn_item a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
+          })
+        }
+      });
+    })        
+  </script>
+
   <script>
     window.addEventListener('load', () => {
       if (window.location.href.indexOf('product/detail.html') > 0) {
@@ -604,6 +634,24 @@
         })
       }
     })        
+  </script>
+
+  <script>
+    window.addEventListener('load', function (event) {
+      if (document.querySelector('.npay_btn_item')) {
+        if (window.location.href.includes('/basket.html')) {
+          document.querySelector('.npay_btn_item a').addEventListener('click', function () {
+            alert('ssss');
+            gtag('event', 'conversion', {
+              'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
+              'value': +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g, ''),
+              'currency': 'KRW',
+              'transaction_id': document.querySelector(".npay_btn_item a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
+            });
+          });
+        }
+      };
+    });
   </script>
 
   <script>
