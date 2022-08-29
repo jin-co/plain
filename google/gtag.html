@@ -605,6 +605,31 @@
       }
     })        
   </script>
+  
+  <script>
+    window.addEventListener('load', function(event) {
+      if (document.querySelector('.npay_btn_item')) {
+          if (window.location.href.includes('/basket.html')) {
+              document.querySelector('.npay_btn_item').addEventListener('click', function() {
+                  gtag('event', 'conversion', {
+                       'send_to': 'AW-392640358/A0AHCOrO4dECEObunLsB',
+                       'value': document.querySelector('.prdTotal').innerText.replace(/\W+/g,''),
+                       'currency': 'KRW'
+                  });
+              });
+          }
+          else {
+              document.querySelector('.npay_btn_item').addEventListener('click', function() {
+                  gtag('event', 'conversion', {
+                       'send_to': 'AW-392640358/A0AHCOrO4dECEObunLsB',
+                       'value': document.querySelector('.total').innerText.replace(/\W+/g, '').slice(0,-1),
+                       'currency': 'KRW'
+                  });
+              });
+          }
+      };
+    });
+  </script>
 
   <title>Document</title>
 </head>
