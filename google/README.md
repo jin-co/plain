@@ -87,3 +87,7 @@ https://moz.com/blog/json-ld-for-beginners
 https://developers.google.com/search/docs
 
 @lediemquynh
+
+## Study materials
+- UA -> GA4 why data migration is impossible
+https://measureschool.com/ga4-migration/#:~:text=It%20is%20impossible%20to%20migrate%20historical%20data%20from,a%20different%20tool%20with%20a%20new%20data%20model.
