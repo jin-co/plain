@@ -609,12 +609,14 @@
 
       if (document.querySelector(".npay_btn_item a")) {
         document.querySelector(".npay_btn_item a").addEventListener('click', () => {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
-            'value': +document.querySelector("#total_order_price_front").innerHTML.replace(/[^\d]/g, ''),
-            'currency': 'KRW',
-            'transaction_id': document.querySelector(".npay_btn_item a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
-          })
+          if (document.querySelector("#total_order_price_front")) {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-736884048/z9zsCPDlzNkDENDqr98C',
+              'value': +document.querySelector("#total_order_price_front").innerHTML.replace(/[^\d]/g, ''),
+              'currency': 'KRW',
+              'transaction_id': document.querySelector(".npay_btn_item a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
+            })
+          }
         })
       }
     })
