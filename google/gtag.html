@@ -604,13 +604,22 @@
   <script>
     window.addEventListener('load', () => {
       document.querySelector(".npay_btn_item a").addEventListener('click', () => {
-        if (document.querySelectorAll('.option_product').length > 0) {
+        if (document.querySelectorAll('.option_product').length > 0) {                    
           dataLayer.push({
             'event': '네이버 구매',
             'value': +document.querySelector("#totalPrice > span > strong > em").innerHTML.replace(/[^\d]/g, ''),
             'currency': 'KRW',
             'transaction_id': document.querySelector(".npay_btn_item a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
           })
+        } else if (document.querySelector("#total_delv_price_front > span")) {
+          dataLayer.push({
+            'event': '네이버 구매',
+            'value': +document.querySelector("#total_delv_price_front > span").innerHTML.replace(/[^\d]/g, ''),
+            'currency': 'KRW',
+            'transaction_id': document.querySelector(".npay_btn_item a").getAttribute('id').replace('NPAY_BUY_LINK_IDNC_ID_', '')
+          })
+        } else {
+          +document.querySelector("#option_box1_price > span").innerHTML.replace(/[^\d]/g, '')
         }
       });
     })        
