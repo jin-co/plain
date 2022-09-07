@@ -646,12 +646,20 @@
       if(document.querySelector("#prod_goods_form > div.buy_btns.holder.pc.clearfix > a.btn.cart._btn_cart")) {
         document.querySelector("#prod_goods_form > div.buy_btns.holder.pc.clearfix > a.btn.cart._btn_cart").addEventListener('click', () => {
 
+  gtag('event', 'conversion', {
+      'send_to': 'AW-439176877/JtTtCML_1NwDEK2dtdEB',
+      'value': 1.0,
+      'currency': 'KRW'
+  
         })
       }
 
       if(document.querySelector("#prod_goods_form > div.buy_btns.mobile._mobile_action_btn_wrap > div > div.pay-box.social_one > div > a.btn.defualt-cart.one_pay")) {
         document.querySelector("#prod_goods_form > div.buy_btns.mobile._mobile_action_btn_wrap > div > div.pay-box.social_one > div > a.btn.defualt-cart.one_pay").addEventListener('click', () => {
-          
+          gtag('event', 'conversion', {
+      'send_to': 'AW-439176877/JtTtCML_1NwDEK2dtdEB',
+      'value': 1.0,
+      'currency': 'KRW'
         })
       }
     })    
