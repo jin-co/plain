@@ -73,6 +73,7 @@ http://tagteam-tdcx.com/wp-content/uploads/woo-product-feed-pro/xml/SMwq5FNKv3l3
 - File upload (RSS 2.0 specification)
 https://support.google.com/merchants/answer/160589?hl=en
 
+
 https://support.google.com/merchants/topic/7294002?hl=en&ref_topic=7294771
 
 https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt
@@ -82,6 +83,10 @@ https://support.google.com/merchants/answer/6324478
 https://developers.google.com/search/docs/advanced/structured-data
 
 https://moz.com/blog/json-ld-for-beginners
+
+## Smart campaign
+- where they appear
+https://support.google.com/google-ads/answer/10091265?hl=en
 
 ## SEO (Search Engine Optimization)
 https://developers.google.com/search/docs
