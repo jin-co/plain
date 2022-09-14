@@ -669,42 +669,77 @@
   <!-- 네이버 페이 -->
   <script>
     // 네이버 페이
-    if (document.querySelector("#NPAY_BUY_LINK_IDNC_ID_1663138545162526")) {      
-      if(document.querySelector("#frmView li.total > strong")) {
-        <!-- Event snippet for 네이버페이 구매 conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
-      'value': 1.0,
-      'currency': 'KRW',
-      'transaction_id': ''
-  });
-</script>
-
+    if (document.querySelector(".npay_btn_item a")) {
+      if (document.querySelector("#frmView li.total > strong")) {
+        document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
+            'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
+            'currency': 'KRW',
+            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+          });
+        })
       }
-      document.querySelector("#NPAY_BUY_LINK_IDNC_ID_1663138545162526").addEventListener('click', () => {
 
-      })
-    }        
-
-    // 페이코 
-    if (document.querySelector("#NPAY_BUY_LINK_IDNC_ID_1663138545162526")) {      
-      if(document.querySelector("#frmView li.total > strong")) {
-<!-- Event snippet for 페이코구매 conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
-      'value': 1.0,
-      'currency': 'KRW',
-      'transaction_id': ''
-  });
-</script>
-
+      if (document.querySelector("#totalSettlePrice")) {
+        document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
+            'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
+            'currency': 'KRW',
+            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+          });
+        })
       }
-      document.querySelector("#NPAY_BUY_LINK_IDNC_ID_1663138545162526").addEventListener('click', () => {
+    }
 
+    // 페이코
+    if (document.querySelector("#payco_btn_CHECKOUT_A1")) {
+      if (document.querySelector("#frmView li.total > strong")) {
+        document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
+            'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
+            'currency': 'KRW',
+            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+          });
+        })
+      }
+
+      if (document.querySelector("#totalSettlePrice")) {
+        document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
+            'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
+            'currency': 'KRW',
+            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+          });
+        })
+      }
+    }
+
+    // mobile    
+    if (document.querySelector("#frmView > div > div.option_total_display_area > div.option_display_area.order-goods")) {
+      document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+        alert('naver')
+        gtag('event', 'conversion', {
+          'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
+          'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
+          'currency': 'KRW',
+          'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+        });
       })
-    }        
+
+      document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+        alert('payco')
+        gtag('event', 'conversion', {
+          'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
+          'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
+          'currency': 'KRW',
+          'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+        });
+      })
+    }    
   </script>
 
 
