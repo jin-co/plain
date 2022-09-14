@@ -668,78 +668,77 @@
   <!-- 싸이클린 -->
   <!-- 네이버 페이 -->
   <script>
-    // 네이버 페이
-    if (document.querySelector(".npay_btn_item a")) {
-      if (document.querySelector("#frmView li.total > strong")) {
-        document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+    // 네이버 페이 pc
+    window.addEventListener('load', () => {
+      if (document.querySelector(".npay_btn_item a")) {
+        if (document.querySelector("#frmView li.total > strong")) {
+          document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
+              'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
+              'currency': 'KRW'
+            });
+          })
+        }
+      }
+
+      // 페이코
+      if (document.querySelector("#payco_btn_CHECKOUT_A1")) {
+        if (document.querySelector("#frmView li.total > strong")) {
+          document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
+              'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
+              'currency': 'KRW'
+            });
+          })
+        }
+
+        // 장바구니 (pc, mobile)
+        if (document.querySelector("#totalSettlePrice")) {
+          document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
+              'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
+              'currency': 'KRW'
+            });
+            alert('naver')
+          })
+
+          document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
+              'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
+              'currency': 'KRW'
+            });
+            alert('payco')
+          })
+        }
+      }
+
+      // mobile    
+      if (document.querySelector("#frmView > div > div.option_total_display_area > div.option_display_area.order-goods").innerHTML !== '') {
+        // 네이버
+        document.querySelector(".npay_btn_item a").addEventListener('click', () => {          
           gtag('event', 'conversion', {
             'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
-            'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
-            'currency': 'KRW',
-            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+            'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
+            'currency': 'KRW'
           });
+          alert('mnaver')
         })
-      }
 
-      if (document.querySelector("#totalSettlePrice")) {
-        document.querySelector(".npay_btn_item a").addEventListener('click', () => {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
-            'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
-            'currency': 'KRW',
-            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
-          });
-        })
-      }
-    }
-
-    // 페이코
-    if (document.querySelector("#payco_btn_CHECKOUT_A1")) {
-      if (document.querySelector("#frmView li.total > strong")) {
-        document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+        // 페이코
+        document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {          
           gtag('event', 'conversion', {
             'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
-            'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
-            'currency': 'KRW',
-            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
+            'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
+            'currency': 'KRW'
           });
+          alert('mpayco')
         })
       }
-
-      if (document.querySelector("#totalSettlePrice")) {
-        document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
-            'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
-            'currency': 'KRW',
-            'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
-          });
-        })
-      }
-    }
-
-    // mobile    
-    if (document.querySelector("#frmView > div > div.option_total_display_area > div.option_display_area.order-goods")) {
-      document.querySelector(".npay_btn_item a").addEventListener('click', () => {
-        alert('naver')
-        gtag('event', 'conversion', {
-          'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
-          'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
-          'currency': 'KRW',
-          'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
-        });
-      })
-
-      document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
-        alert('payco')
-        gtag('event', 'conversion', {
-          'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
-          'value': +document.querySelector("#frmView li.total > strong").innerText.replace(/[^\d]/g, ''),
-          'currency': 'KRW',
-          'transaction_id': document.querySelector(".npay_btn_item a").id.replace(/[^\d]/g, '')
-        });
-      })
-    }    
+    })    
   </script>
 
 
