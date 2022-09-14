@@ -701,8 +701,7 @@
               'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
               'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
               'currency': 'KRW'
-            });
-            alert('naver')
+            });            
           })
 
           document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
@@ -710,8 +709,7 @@
               'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
               'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
               'currency': 'KRW'
-            });
-            alert('payco')
+            });            
           })
         }
       }
@@ -724,8 +722,7 @@
             'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
             'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
             'currency': 'KRW'
-          });
-          alert('mnaver')
+          });          
         })
 
         // 페이코
@@ -734,8 +731,7 @@
             'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
             'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
             'currency': 'KRW'
-          });
-          alert('mpayco')
+          });          
         })
       }
     })    
