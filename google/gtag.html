@@ -717,26 +717,30 @@
       }
 
       // mobile    
-      if (document.querySelector("#frmView > div > div.option_total_display_area > div.option_display_area.order-goods").innerHTML !== '') {
-        // 네이버
-        document.querySelector(".npay_btn_item a").addEventListener('click', () => {          
-          gtag('event', 'conversion', {
-            'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
-            'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
-            'currency': 'KRW'
-          });
-          alert('mnaver')
-        })
+      if (document.querySelector(".npay_btn_item a") || document.querySelector("#payco_btn_CHECKOUT_A1")) {
+        if (document.querySelector("#frmView > div > div.option_total_display_area > div.option_display_area.order-goods")) {
+          if (document.querySelector("#frmView > div > div.option_total_display_area > div.option_display_area.order-goods").innerHTML !== '') {
+            // 네이버
+            document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
+                'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
+                'currency': 'KRW'
+              });
+              alert('mnaver')
+            })
 
-        // 페이코
-        document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {          
-          gtag('event', 'conversion', {
-            'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
-            'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
-            'currency': 'KRW'
-          });
-          alert('mpayco')
-        })
+            // 페이코
+            document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
+                'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
+                'currency': 'KRW'
+              });
+              alert('mpayco')
+            })
+          }
+        }
       }
     })    
   </script>
