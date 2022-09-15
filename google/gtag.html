@@ -678,8 +678,7 @@
                 'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
                 'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
                 'currency': 'KRW'
-              });
-              alert('mnaver or naver')
+              });              
             })
 
             // 페이코 (pc, mobile)
@@ -688,8 +687,7 @@
                 'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
                 'value': +document.querySelector("#frmView li.total > strong").innerText.substring(0, document.querySelector("#frmView li.total > strong").innerText.indexOf('(')).replace(/[^\d]/g, ''),
                 'currency': 'KRW'
-              });
-              alert('mpayco or payco')
+              });              
             })
           } 
         } else {
@@ -700,8 +698,7 @@
                 'send_to': 'AW-705048140/xBS4CIK2y9kDEMzcmNAC',
                 'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
                 'currency': 'KRW'
-              });
-              alert('naver jang')
+              });              
             })
 
             document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
@@ -709,8 +706,7 @@
                 'send_to': 'AW-705048140/lSGmCIW2y9kDEMzcmNAC',
                 'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
                 'currency': 'KRW'
-              });
-              alert('payco jang')
+              });              
             })
           }
         }
