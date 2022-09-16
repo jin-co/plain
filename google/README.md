@@ -51,6 +51,9 @@ https://support.google.com/google-ads/answer/6259715?hl=en-GB
 - maximize conversion
 https://support.google.com/google-ads/answer/7381968?hl=en
 
+- Upload your own display ads
+https://support.google.com/google-ads/answer/9050314
+
 ## Merchant
 - unsupported shopping content 
 https://support.google.com/merchants/answer/6150006
