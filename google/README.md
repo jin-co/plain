@@ -54,6 +54,9 @@ https://support.google.com/google-ads/answer/7381968?hl=en
 - Upload your own display ads
 https://support.google.com/google-ads/answer/9050314
 
+- Manage your responsive display ads
+https://support.google.com/google-ads/answer/9050310
+
 ## Merchant
 - unsupported shopping content 
 https://support.google.com/merchants/answer/6150006
