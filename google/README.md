@@ -45,6 +45,11 @@ https://support.google.com/tagmanager/answer/7182738?hl=en
 - how google ad manager works with google ads
 https://support.google.com/google-ads/answer/2472739?hl=en
 
+### biding
+- Pick the right bid strategy
+-> maximize click (website tragic) > target impression share (specific page, awareness)> maximize conversion without CPA or ROAS (conversion) >
+https://support.google.com/google-ads/answer/6167148
+
 - attribution models
 https://support.google.com/google-ads/answer/6259715?hl=en-GB
 
