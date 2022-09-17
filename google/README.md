@@ -47,7 +47,10 @@ https://support.google.com/google-ads/answer/2472739?hl=en
 
 ### biding
 - Pick the right bid strategy
--> maximize click (website tragic) > target impression share (specific page, awareness)> maximize conversion without CPA or ROAS (conversion) >
+-> maximize click (website tragic) > target impression share (specific page, awareness)> maximize conversion without CPA or ROAS (conversion) > maximize conversion with CPA (leads, transaction) > maximize conversion with ROAS (qualified leads, sales)
+-> Know when to use seasonality adjustments with Smart Bidding : additional information related to temporary conversion rate changes.
+--> major change in conversion rates will temporarily occur for one to seven days for an unprecedented reason such as a promotion (O)
+--> seasonal period such as back-to-school time, the seasonal period to apply for more than seven days. (X)
 https://support.google.com/google-ads/answer/6167148
 
 - attribution models
