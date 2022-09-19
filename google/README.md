@@ -4,7 +4,6 @@
 -> populates dimensions (titles) and metrics (values)
 https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-tag-websites%2Cgoogle-tag-manager-websites
 
-
 # CMS
 ## wordpress
 
