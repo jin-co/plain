@@ -713,7 +713,51 @@
       }
     })    
   </script>
+  
+  <!-- 테나몰 https://tenamall.co.kr/ -->
+      <script>        
+        window.addEventListener('load', () => {
+            if (document.querySelector("#frmView > div .total_price")) {
+                document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-584439170/o4x2CMb7reADEIKr15YC',
+                        'value': +document.querySelector("#frmView > div .total_price").innerText.replace(/^[\d]/g, ''),
+                        'currency': 'KRW',
+                    });
+                    alert('npay')
+                })
 
+                document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-584439170/MKF6CMP7reADEIKr15YC',
+                        'value': +document.querySelector("#frmView > div .total_price").innerText.replace(/^[\d]/g, ''),
+                        'currency': 'KRW',
+                    });
+                    alert('naver')
+                })
+            }
+
+            if (document.querySelector("#totalSettlePrice")) {
+                document.querySelector("#payco_btn_CHECKOUT_A1").addEventListener('click', () => {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-584439170/o4x2CMb7reADEIKr15YC',
+                        'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
+                        'currency': 'KRW',
+                    });
+                    alert('npay')
+                })
+
+                document.querySelector(".npay_btn_item a").addEventListener('click', () => {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-584439170/MKF6CMP7reADEIKr15YC',
+                        'value': +document.querySelector("#totalSettlePrice").innerText.replace(/[^\d]/g, ''),
+                        'currency': 'KRW',
+                    });
+                    alert('naver')
+                })
+            }
+        })        
+    </script>
 
 
   <title>Document</title>
