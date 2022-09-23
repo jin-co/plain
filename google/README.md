@@ -23,6 +23,17 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 - events
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
 
+### audiences
+-> it takes 24 ~ 48 hours to appear when creating a new audience
+-> scope:
+--> all sessions | single session | single event
+-> static VS dinymic
+--> static: once a condition is met, the audience stays in the group
+--> dinymic: evaluates if a user belongs to a group constantly including or excluding depending on if the user meets the criterias
+-> time-windowed
+--> lifetime | periods
+- https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
+
 ## Analytics
 - https://developers.google.com/analytics?hl=en
 
