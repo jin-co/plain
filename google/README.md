@@ -24,15 +24,22 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
 
 ### audiences
--> it takes 24 ~ 48 hours to appear when creating a new audience
--> scope:
+- https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
+- it takes 24 ~ 48 hours to appear when creating a new audience
+- starts collection data after the audience is set (when importing audiences only within 30 days will be imported given it is at least 30 days or more)
+(once imported they are separate audiences)
+- when creating audiences there are three options: new | template | suggested audience
+- membership duration: max 540(18months)
+- creating audience:
+-> scope
 --> all sessions | single session | single event
 -> static VS dinymic
 --> static: once a condition is met, the audience stays in the group
 --> dinymic: evaluates if a user belongs to a group constantly including or excluding depending on if the user meets the criterias
 -> time-windowed
 --> lifetime | periods
-- https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
+-> sequences
+--> in order, anytime after | within time a frame
 
 ## Analytics
 - https://developers.google.com/analytics?hl=en
