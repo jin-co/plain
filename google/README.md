@@ -5,7 +5,11 @@
 https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-tag-websites%2Cgoogle-tag-manager-websites
 
 # CMS
-## wordpress
+- wordpress
+- cafe24
+- iamweb
+- godomall
+- wix 
 
 ### plugin
 - contact form 7
