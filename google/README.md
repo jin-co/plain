@@ -34,6 +34,14 @@ https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
 - events
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
 
+- Data thresholds
+> If your report or exploration is missing data, it may be because Google Analytics has applied a data threshold
+>> *Data thresholds are system defined. You can't adjust them.
+https://support.google.com/analytics/answer/9383630
+
+- Reporting identity
+> An individual customer often interacts with your business using different devices and platforms (different sessions). Google Analytics 4 can use four different methods to unify them into a single cross-device user journey
+
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
 - it takes 24 ~ 48 hours to appear when creating a new audience
