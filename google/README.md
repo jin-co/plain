@@ -70,7 +70,7 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 > used to enable cross-device reporting, cross-device remarketing, and cross-device conversion export to Ads.
 >>> to turn on *personalization*: https://support.google.com/ads/answer/2662856
 > Google signals enables:
->> cross platform reporting
+>> cross platform reporting: For your reports to include Google-signals data you need a monthly average of 500 users per day per property.
 >>> Cross-device activity is tracked when you log-in to a Google account using the following:
 >>>> 1) iOS devices (Google signals does not support iOS 14+ and upward devices (Apple no longer supports IDFA). For iOS 14+ devices, you must use User-ID tracking for cross-device tracking)
 >>>> 2) Android devices
