@@ -69,6 +69,19 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> and who have turned on Ads Personalization
 > used to enable cross-device reporting, cross-device remarketing, and cross-device conversion export to Ads.
 >>> to turn on *personalization*: https://support.google.com/ads/answer/2662856
+> Google signals enables:
+>> cross platform reporting
+>>> Cross-device activity is tracked when you log-in to a Google account using the following:
+>>>> 1) iOS devices (Google signals does not support iOS 14+ and upward devices (Apple no longer supports IDFA). For iOS 14+ devices, you must use User-ID tracking for cross-device tracking)
+>>>> 2) Android devices
+>>>> 3) Google Chrome
+>>>> 4) Google Chrome web browser
+>>>> 5) Other web browsers
+>>>> 6) Client apps that require a Google account
+>>>> 7) Other apps that require a Google account
+>> remarketing with google analytics
+>> advertising reporting features
+>> demographics and interests
 
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
