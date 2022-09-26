@@ -35,9 +35,14 @@ https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
 
 - Data thresholds
+https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article 
 > If your report or exploration is missing data, it may be because Google Analytics has applied a data threshold
->> *Data thresholds are system defined. You can't adjust them.
-https://support.google.com/analytics/answer/9383630
+>> low user count: Data in a report or exploration may be withheld when Google signals is enabled and you have a low user count in the specified date range
+>> demographic information: If a report or exploration includes demographic information and the reporting identity relies on the device ID, the row containing that data may be withheld if there aren't enough total users
+>> adjusting the data range
+>> Exporting to BigQuery: Analytics doesn't export data from Google signals to BigQuery. As a result, you may see different event counts per event between Analytics and BigQuery
+> when *google signal is on* -> demographics and interests data is collected -> sets threshorld to prvent inferring the identity of uses (when the number of list is small it is easer to look through to find the identity of a certain user based on demographics, interests, etc.)
+>> *Data thresholds are system defined. You can't adjust them.*
 
 - Reporting identity
 > An individual customer often interacts with your business using different devices and platforms (different sessions). Google Analytics 4 can use four different methods to unify them into a single cross-device user journey
@@ -45,9 +50,25 @@ https://support.google.com/analytics/answer/9383630
 >>> set up guide: https://support.google.com/analytics/answer/9213390?hl=en&ref_topic=9303474
 >> 2. Google signals: Google signals is data from users who are signed in to Google
 >>> set up guide: https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
->> 3. Device ID
->> 4. Modeling
+>> 3. Device ID: On websites, the device ID gets its value from the client ID. On apps, the device ID is the app-instance ID.
+>> 4. Modeling: When users decline Analytics identifiers (cookies, etc.), behavioral data for those users is unavailable. Analytics fills this gap by using the data of similar users who do accept cookies from the same property to model the behavior of the users who decline cookies.
+>>> guide: https://support.google.com/analytics/answer/11161109
 >> *Analytics creates a single user journey from all the data associated with the same identity. Because these identity spaces are used in all reports, they allow you to de-duplicate users and tell a more unified, holistic story about their relationships with your business.
+> Reporting identity options
+>> 1) Blended: User-ID -> Google signals -> device ID -> modeling
+>> 2) Observed: User-ID -> Google signals -> device ID
+>> 3) Device based
+>>> *o get the full benefit of the first two options, you need to activate Google signals and collect user IDs.*
+>>>> to activate google signals: https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
+>>>>> When you activate Google signals, Analytics collects demographics and interests data when it is available. As a consequence, your reports are subject to data thresholds.(**The option you choose does not affect data collection or processing. You can switch between the options at any time without making any permanent impact on data.**)
+
+- Google signals
+https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
+> Google signals are session data from sites 
+>> that Google associates with users who have signed in to their Google accounts
+>> and who have turned on Ads Personalization
+> used to enable cross-device reporting, cross-device remarketing, and cross-device conversion export to Ads.
+>>> to turn on *personalization*: https://support.google.com/ads/answer/2662856
 
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
