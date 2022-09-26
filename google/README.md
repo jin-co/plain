@@ -19,6 +19,12 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 
 # Links
 
+# Analytics
+- https://developers.google.com/analytics?hl=en
+
+- Events
+https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
+
 ## GA4
 - events
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
@@ -41,12 +47,6 @@ https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
 -> sequences
 --> in order, anytime after | within time a frame
 
-## Analytics
-- https://developers.google.com/analytics?hl=en
-
-- Events
-https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
-
 ## GTM
 https://support.google.com/tagmanager#topic=3441530
 
@@ -56,13 +56,13 @@ https://support.google.com/tagmanager/topic/7679108?hl=en&ref_topic=7679384
 - built in variables
 https://support.google.com/tagmanager/answer/7182738?hl=en
 
-## Google ads
+# Google ads
 - https://developers.google.com/google-ads
 - https://support.google.com/google-ads/#topic=10286612
 - how google ad manager works with google ads
 https://support.google.com/google-ads/answer/2472739?hl=en
 
-### biding
+## biding
 - Pick the right bid strategy
 -> maximize click (website tragic) > target impression share (specific page, awareness)> maximize conversion without CPA or ROAS (conversion) > maximize conversion with CPA (leads, transaction) > maximize conversion with ROAS (qualified leads, sales)
 -> Know when to use seasonality adjustments with Smart Bidding : additional information related to temporary conversion rate changes.
@@ -76,7 +76,7 @@ https://support.google.com/google-ads/answer/6259715?hl=en-GB
 - maximize conversion
 https://support.google.com/google-ads/answer/7381968?hl=en
 
-### responsive display ads
+## responsive display ads
 - Upload your own display ads
 https://support.google.com/google-ads/answer/9050314
 
@@ -86,7 +86,7 @@ https://support.google.com/google-ads/answer/9050310
 - Create a responsive display ad
 https://support.google.com/google-ads/answer/7005917
 
-## Merchant
+# Merchant
 - unsupported shopping content 
 https://support.google.com/merchants/answer/6150006
 
@@ -128,6 +128,6 @@ https://developers.google.com/search/docs
 
 @lediemquynh
 
-## Study materials
+# Study materials
 - UA -> GA4 why data migration is impossible
 https://measureschool.com/ga4-migration/#:~:text=It%20is%20impossible%20to%20migrate%20historical%20data%20from,a%20different%20tool%20with%20a%20new%20data%20model.
