@@ -41,10 +41,13 @@ https://support.google.com/analytics/answer/9383630
 
 - Reporting identity
 > An individual customer often interacts with your business using different devices and platforms (different sessions). Google Analytics 4 can use four different methods to unify them into a single cross-device user journey
->> 1. User-ID
->> 2. Google signals
+>> 1. User-ID : create your own persistent IDs for signed-in users, To use this identity space, you must consistently assign IDs to your users and include the IDs along with the data you send to Analytics. It is the most accurate identity space. 
+>>> set up guide: https://support.google.com/analytics/answer/9213390?hl=en&ref_topic=9303474
+>> 2. Google signals: Google signals is data from users who are signed in to Google
+>>> set up guide: https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> 3. Device ID
 >> 4. Modeling
+>> *Analytics creates a single user journey from all the data associated with the same identity. Because these identity spaces are used in all reports, they allow you to de-duplicate users and tell a more unified, holistic story about their relationships with your business.
 
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
