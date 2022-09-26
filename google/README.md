@@ -41,6 +41,10 @@ https://support.google.com/analytics/answer/9383630
 
 - Reporting identity
 > An individual customer often interacts with your business using different devices and platforms (different sessions). Google Analytics 4 can use four different methods to unify them into a single cross-device user journey
+>> 1. User-ID
+>> 2. Google signals
+>> 3. Device ID
+>> 4. Modeling
 
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
