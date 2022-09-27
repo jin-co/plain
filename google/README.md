@@ -53,9 +53,11 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> 3. Device ID: On websites, the device ID gets its value from the client ID. On apps, the device ID is the app-instance ID.
 >> 4. Modeling: When users decline Analytics identifiers (cookies, etc.), behavioral data for those users is unavailable. Analytics fills this gap by using the data of similar users who do accept cookies from the same property to model the behavior of the users who decline cookies.
 >>> guide: https://support.google.com/analytics/answer/11161109
->> *Analytics creates a single user journey from all the data associated with the same identity. Because these identity spaces are used in all reports, they allow you to de-duplicate users and tell a more unified, holistic story about their relationships with your business.
+>> *Analytics creates a single user journey from all the data associated with the same identity. Because these identity spaces are used in all reports, they allow you to de-duplicate users and tell a more unified, holistic story about their relationships with your business.*
 > Reporting identity options
 >> 1) Blended: User-ID -> Google signals -> device ID -> modeling
+>>> modeling: https://support.google.com/analytics/answer/11161109
+>>> when users decline cookies on the site, it is not possible to tell if the 10 pageview event is coming from a single user or 10 deffent users -> modeling is based on other similar users who accepted cookies to identify the user who denied cookies
 >> 2) Observed: User-ID -> Google signals -> device ID
 >> 3) Device based
 >>> *o get the full benefit of the first two options, you need to activate Google signals and collect user IDs.*
