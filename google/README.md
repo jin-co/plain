@@ -1,4 +1,7 @@
 # Google Ads
+> shows on Google services (Youtube, Search, ...), Google partner websites and apps
+>> personalization: https://support.google.com/ads/answer/2662856#zippy=%2Ccontrol-personalized-ads-on-non-google-websites-and-apps-based-on-your-google-account-activity%2Cstop-getting-personalized-ads-from-other-ad-networks%2Cwhen-youre-signed-in%2Cwhen-youre-signed-out
+
 
 ## parameters
 -> populates dimensions (titles) and metrics (values)
@@ -81,9 +84,10 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >>>> 5) Other web browsers
 >>>> 6) Client apps that require a Google account
 >>>> 7) Other apps that require a Google account
->> remarketing with google analytics
+>> remarketing with google analytics: Create remarketing audiences from your Google Analytics data, and share those audiences with your linked advertising accounts. When you activate Google signals, audiences that you create in Google Analytics and publish to Google Ads and other Google Marketing Platform advertising products can serve ads in Cross Device-eligible remarketing campaigns to Google users who have turned on Ads Personalization.
 >> advertising reporting features
 >> demographics and interests
+> data collected won't be shared or used unless *data sharing seetings* or *link with google products* is enabled
 
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
