@@ -91,6 +91,15 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> demographics and interests
 > data collected won't be shared or used unless *data sharing seetings* or *link with google products* is enabled
 
+- data retention
+https://support.google.com/analytics/answer/7667196
+> applys to user-level and event-level data associated with cookies, user-identifires, and advertising identifiers
+> *While the retention period and user-activity reset controls cover event and user-level data stored by Google Analytics, certain user-keyed data (such as age, gender, interests) is by default deleted by Google Analytics after six months of inactivity for a given user for a Universal Analytics property or after two months for a Google Analytics 4 property.*
+> length:
+>> For Google-signal data: 26 months (max)
+>> For GA4 (non Analytics 360 version), retention of user-level data, including conversions, can be set to a maximum of 14 months. For all other event data, you can choose the length of retention: 2 months | 14 months
+>> For UA, the setting applies to user-level and event-level data. You can choose: 14 months | 26 months | 38 months | 50 months | Do not automatically expire *Increasing the retention period or changing it to Do not automatically expire, however, does not affect data that you have already collected. For example, data collected when 14 months was in effect will still be deleted 14 months after it was collected even if you change the retention period to 26 months.*
+
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
 - it takes 24 ~ 48 hours to appear when creating a new audience
