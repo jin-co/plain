@@ -91,6 +91,9 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> demographics and interests
 > data collected won't be shared or used unless *data sharing seetings* or *link with google products* is enabled
 
+- integration
+https://support.google.com/analytics/topic/9306488
+
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
 - it takes 24 ~ 48 hours to appear when creating a new audience
@@ -117,6 +120,14 @@ https://support.google.com/tagmanager/topic/7679108?hl=en&ref_topic=7679384
 
 - built in variables
 https://support.google.com/tagmanager/answer/7182738?hl=en
+
+## data sharing
+Review the settings in your account, and this additional information here, to help you decide to turn these settings ON or OFF. If all settings are OFF, your Analytics data is only used to provide and maintain the Analytics service
+https://support.google.com/analytics/answer/1011397#zippy=%2Cin-this-article
+- Google products & services: this data can be used to improve the Google Ads system tools that you use to create, manage, and analyze your ad campaigns
+- Benchmarking: When you turn this setting OFF, data can still flow between Analytics and the other Google products that are explicitly linked to any of your account properties, Benchmarking data lets you know where you stand in your industry and contributes to research analyses that uncover important market trends
+- Technical support: You benefit when this setting is ON because Google support could access your account to troubleshoot and help you find solutions if you report an issue in your account.
+- Account specialists: When you turn the first setting ON, these specialists will be able to look at and assess the efficacy of different implementation strategies and account configurations
 
 # Google ads
 - https://developers.google.com/google-ads
