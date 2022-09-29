@@ -53,6 +53,21 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 > An individual customer often interacts with your business using different devices and platforms (different sessions). Google Analytics 4 can use four different methods to unify them into a single cross-device user journey
 >> 1. User-ID : create your own persistent IDs for signed-in users, To use this identity space, you must consistently assign IDs to your users and include the IDs along with the data you send to Analytics. It is the most accurate identity space. 
 >>> set up guide: https://support.google.com/analytics/answer/9213390?hl=en&ref_topic=9303474
+>>> The User-ID feature lets you associate your own identifiers with individual users so you can connect their behavior across different sessions and on various devices and platforms. Analytics interprets each user ID as a separate user
+>>> what you can do with User-ID
+>>>> 1. Compare with non-signed in users
+>>>> 2. user exploration: compare existing segment with temporary segment
+>>>> 3. creating remarketing audiences: 
+>>>>> If you are using User-ID, then Analytics only includes the user identifier and the device identifier for the last device associated with each logged-in user.
+>>>>> If you're not using User-ID, Analytics includes all device and user identifiers in the audience information it exports to Ads.
+>>> Users sometimes trigger events on your site or app before signing in or after signing out. In the first instance, Analytics uses the session ID to associate that session with the user ID provided when the user signs in. In the second instance, once a user signs out, Analytics stops associating any subsequent events with that user ID.
+>>> limits:
+>>>> 1. The user IDs you send to Google Analytics must be fewer than 256 characters long.
+>>>> 2. Any data in your Analytics account collected and recorded prior to implementation won't be reprocessed and associated with a user ID.
+>>>> 3. User-ID data collected in one property can't be shared or mixed with data in other properties.
+
+For example, a user starts a session with no associated user ID and triggers Events 1 and 2. No user ID is associated with those events. The user then signs in and triggers Event 3. Events 1, 2, and 3 are now all associated with that user's ID. The user finally signs out and then triggers Event 4. No user ID is associated with Event 4. Events 1, 2, and 3 remain associated with that user.
+
 >> 2. Google signals: Google signals is data from users who are signed in to Google
 >>> set up guide: https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> 3. Device ID: On websites, the device ID gets its value from the client ID. On apps, the device ID is the app-instance ID.
