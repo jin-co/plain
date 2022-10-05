@@ -135,17 +135,18 @@ https://support.google.com/analytics/topic/9306488
 - when creating audiences there are three options: new | template | suggested audience
 - membership duration: max 540(18months)
 - creating audience:
--> scope (this decedes the range of the audiences)
+-> scope (this decedes the time span of the audiences collections)
 >>1) all sessions: all conditions must be met during the lifetime of the user 
 >>2) single session (with in the same session): all conditions must be met within the same session
 >>3) single event: all conditions must be met in a single event
--> static VS dinymic
+-> dimensions: static VS dinymic (sets the standard as to how audience will be added)
 --> static: once a condition is met, the audience stays in the group
 --> dinymic: evaluates if a user belongs to a group constantly including or excluding depending on if the user meets the criterias
--> time-windowed
+-> metrics: time-windowed
 --> lifetime | periods
 -> sequences
 --> in order, anytime after | within time a frame
+**When linking ADs - Analytics audience list is only available when personalized advertising and google signal are enabled**
 
 ## GTM
 https://support.google.com/tagmanager#topic=3441530
