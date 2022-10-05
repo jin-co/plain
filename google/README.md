@@ -35,6 +35,23 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 - Events
 https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
 
+## GA4 vs UA
+### GA4
+- building block: event
+- enhanced measure: automatic (scroll, file downloads, page view, video engagement, site search, ...)
+- categorized report:
+>1) life cycle
+>> emgagement (was called behavior in UA)
+>> emgagement (was called behavior in UA)
+>2) user
+>3) event
+
+
+### UA
+- building block: view (page view, screen views) / hit
+- enhanced measure: need additional settings
+
+
 ## GA4
 - events
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
