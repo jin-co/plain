@@ -42,7 +42,8 @@ https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
 - categorized report:
 >1) life cycle
 >> emgagement (was called behavior in UA)
->> emgagement (was called behavior in UA)
+>> monetization (was called ecommerce in UA)
+>> retention (was called new users and returning users in UA)
 >2) user
 >3) event
 
@@ -103,7 +104,7 @@ For example, a user starts a session with no associated user ID and triggers Eve
 
 - Google signals
 https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
-> Google signals are session data from sites 
+> Google signals are session data from sites which allows you to measure cross-device engagement without the need for user ID
 >> that Google associates with users who have signed in to their Google accounts
 >> and who have turned on Ads Personalization
 > used to enable cross-device reporting, cross-device remarketing, and cross-device conversion export to Ads.
