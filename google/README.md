@@ -46,6 +46,8 @@ https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
 >> retention (was called new users and returning users in UA)
 >2) user
 >3) event
+- expanded predictive insights, deeper integraion with Google Ads, cross-device measurement capabilites, and granular data controls
+- associated services such as event tracking, remarketing and ecommerce are migrated from UA
 
 
 ### UA
