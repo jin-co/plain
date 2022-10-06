@@ -126,6 +126,15 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> demographics and interests
 > data collected won't be shared or used unless *data sharing seetings* or *link with google products* is enabled
 
+- remarketing
+> condition: 
+>> 1) tag inserted (through either hard coding or syncing with existing UA) 
+>> 2) 'data collection' under 'data settings' under the property is started
+>> 3) Google signal is allowed (to measure cross-device engagement without the need for user ID -> everything is tracked with logged in information of the user)
+> default remarketing list (audience):
+>> 1) All Users
+>> 2) Purchases
+
 - integration
 https://support.google.com/analytics/topic/9306488
 
