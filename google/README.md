@@ -182,6 +182,8 @@ https://support.google.com/analytics/answer/1011397#zippy=%2Cin-this-article
 - how google ad manager works with google ads
 https://support.google.com/google-ads/answer/2472739?hl=en
 
+##
+
 ## biding
 - Pick the right bid strategy
 -> maximize click (website tragic) > target impression share (specific page, awareness)> maximize conversion without CPA or ROAS (conversion) > maximize conversion with CPA (leads, transaction) > maximize conversion with ROAS (qualified leads, sales)
