@@ -34,6 +34,15 @@
 
 
   <!-- Event snippet for CT Purchase conversion page -->
+
+  <script>
+    window.addEventListener('load', function () {
+      var enhanced_conversion_data = {
+        "email": document.querySelector("#wp--skip-link--target > div.wp-container-7.entry-content.wp-block-post-content > div > div > section.woocommerce-customer-details > section > div.woocommerce-column.woocommerce-column--1.woocommerce-column--billing-address.col-1 > address > p.woocommerce-customer-details--email").innerText
+      }
+    })
+  </script>
+
   <script>
     window.addEventListener('load', function () {
       if (window.location.href.includes('checkout/order-received')) {
@@ -47,7 +56,7 @@
     })  
   </script>
 
-
+  <!-- Event snippet for CT Purchase conversion page -->
 
 
   <title>Document</title>

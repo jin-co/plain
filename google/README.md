@@ -182,7 +182,15 @@ https://support.google.com/analytics/answer/1011397#zippy=%2Cin-this-article
 - how google ad manager works with google ads
 https://support.google.com/google-ads/answer/2472739?hl=en
 
-##
+## Enhanced Conversion
+- when a user clicks an Ads gclid is attached and when th user make a purchase(converts) the gclid is matched against the id in Ads (which also created when the Ads was clicked). But since it is dependent on cookies when cookies are disabled the conversion is lost -> to solve this EC uses gmail (or other google info a user has) to compensate the lost of cookie data.
+- safe: gmail is hashed with SHA256 and sent with SSL
+- only matched data is encrypted and the rest is deleted
+### condition:
+> sitewide tag (either Gtag.js or GTM tag)
+> CT source must be from Ads (ones created on Ads: conversions from Analytic and offline are not supported yet)
+> submitted data must be clear text
+> URL must be **https**
 
 ## biding
 - Pick the right bid strategy
