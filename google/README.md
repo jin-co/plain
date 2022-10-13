@@ -58,6 +58,12 @@ https://developers.google.com/analytics/devguides/collection/gtagjs/events?hl=en
 ## GA4
 - events
 https://support.google.com/analytics/answer/9322688?hl=en&ref_topic=9756175
+> automatic events (only shows the event when it is applicable) -> recommended event -> custom event (*events in UA are automatically imported to GA4*)
+>> automatically collected events
+>> https://support.google.com/analytics/answer/9234069
+>>> translation: 
+>>>> 1) action in UA -> event_name in GA4
+>>>> 2) event_category, event_label, value in UA -> parameters in GA4
 
 - Data thresholds
 https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article 
