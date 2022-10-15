@@ -32,6 +32,7 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 ### to connect:
 
 ## shopify
+### to connect:
 
 # Analytics
 - https://developers.google.com/analytics?hl=en
