@@ -29,6 +29,7 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 ### to connect:
 
 ## wix 
+### to connect:
 
 ## shopify
 
