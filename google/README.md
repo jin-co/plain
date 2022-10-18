@@ -146,6 +146,9 @@ https://support.google.com/analytics/answer/9445345#zippy=%2Cin-this-article
 >> 1) All Users
 >> 2) Purchases
 
+- ecommerce
+https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm
+
 - integration
 https://support.google.com/analytics/topic/9306488
 
