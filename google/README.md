@@ -243,6 +243,15 @@ https://support.google.com/google-ads/answer/7005917
 # Merchant
 - unsupported shopping content 
 https://support.google.com/merchants/answer/6150006
+- condition:
+> Payment information
+> Contact information
+> Terms  & condition or FAQ page
+> Privacy policy
+> Return and Refund Policy
+> SSL certificate
+> Retail website
+> Language and currency in the website
 
 - Healthcare & medicines
 https://support.google.com/merchants/answer/6150151
