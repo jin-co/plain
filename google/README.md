@@ -233,6 +233,33 @@ https://support.google.com/google-ads/answer/7381968?hl=en
 ## glid
 Gclid can consist of  up to 100 chars, and stands for “Google CLick ID” and it contains data of the ads clicked (including information on Google Ads account, campaign, ads and keywords). **Conversion linker and Global Site Tag will set *1st party cookies* on the domain using the gclid added to the URL.**
 
+### cross domain setting
+> with gtag
+`
+gtag( 'set', 'linker', {
+    'domains': [ 'exampleA.com', 'exampleB.com' ],
+    'decorate_forms': true
+} );   
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push( arguments );}
+gtag('set', 'linker', {
+    'domains': ['exampleA.com', 'exampleB.com'],
+    'decorate_forms': true
+});
+gtag('js', new Date());
+gtag('config', 'AW-XXXXXXXX');
+</script>
+`
+
+### To simulate glid (this cookies are only available in the domain in whick the 1st coolies are created)
+> 1) Add gclid to the LP URL ** &gclid=  / ?gclid=
+> 2) Right-click and select “inspect”
+> 3) You’ll see developer tools. Go to Application => Cookies => Select the domain (same as the one you see in the url) 
+> 4) Search by ‘gcl_aw’
+
 # data retention
 https://support.google.com/analytics/answer/7667196
 > applys to user-level and event-level data associated with cookies, user-identifires, and advertising identifiers
