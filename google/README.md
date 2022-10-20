@@ -200,6 +200,16 @@ https://support.google.com/google-ads/answer/2472739?hl=en
 - when a user clicks an Ads gclid is attached and when th user make a purchase(converts) the gclid is matched against the id in Ads (which also created when the Ads was clicked). But since it is dependent on cookies when cookies are disabled the conversion is lost -> to solve this EC uses gmail (or other google info a user has) to compensate the lost of cookie data.
 - safe: gmail is hashed with SHA256 and sent with SSL
 - only matched data is encrypted and the rest is deleted
+### tag diagnostics report
+https://support.google.com/google-ads/answer/11956168?hl=en#
+> report status:
+>> 1) Recording enhanced conversions: Enhanced conversions are being recorded and no major issues are detected.
+>> 2) Enhanced conversions not in use: You haven’t accepted the customer data terms, which are required to enable enhanced conversions. Click “view customer data terms” to review and accept the terms.
+>> 3) Waiting to receive enhanced conversion data: You’ve enabled enhanced conversions but we haven’t received data yet. It could take up to 48 hours after receiving data to reflect the status. If the status doesn’t change after 48 hours of completing implementation double check that you’ve followed the instructions to set up enhanced conversions in the Google Ads API.
+>> 4) Setup issues detected: There are issues with your enhanced conversions setup (additional details below).
+>> 5) No recent conversion data to process: No recorded conversions in the last 7 days. Make sure your campaigns are active and your ads take people to a webpage that contains a conversion action tag.
+
+
 ### condition:
 > sitewide tag (either Gtag.js or GTM tag)
 > CT source must be from Ads (ones created on Ads: conversions from Analytic and offline are not supported yet)
