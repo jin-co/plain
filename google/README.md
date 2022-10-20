@@ -230,6 +230,9 @@ https://support.google.com/google-ads/answer/6259715?hl=en-GB
 - maximize conversion
 https://support.google.com/google-ads/answer/7381968?hl=en
 
+## glid
+Gclid can consist of  up to 100 chars, and stands for “Google CLick ID” and it contains data of the ads clicked (including information on Google Ads account, campaign, ads and keywords). **Conversion linker and Global Site Tag will set *1st party cookies* on the domain using the gclid added to the URL.**
+
 # data retention
 https://support.google.com/analytics/answer/7667196
 > applys to user-level and event-level data associated with cookies, user-identifires, and advertising identifiers
