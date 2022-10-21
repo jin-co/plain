@@ -34,6 +34,9 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 ## shopify
 ### to connect:
 
+## gnuboard
+### to connect: http://beautipia.co.kr/gnu/3
+
 # Analytics
 - https://developers.google.com/analytics?hl=en
 
