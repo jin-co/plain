@@ -155,6 +155,16 @@ https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?clien
 - integration
 https://support.google.com/analytics/topic/9306488
 
+## auto-tagging 
+https://support.google.com/google-ads/answer/3095550?hl=en
+> Auto-tagging is a required feature, which when used with Google Ads conversion tracking or Google Analytics, allows you to see how effectively your ad clicks lead to valuable customer activity auto tag needs to be turned on to:
+> Track conversions on your website on all browsers
+> Import conversion data into Google Ads from Google Analytics, as well as other external sources, such as your Customer Relation Management (CRM) system
+> Import Google Ads campaign and cost data into Google Analytics reports
+> Import Google Analytics site engagement metrics, such as bounce rate and average session duration, into Google Ads reporting
+### how it works
+> After someone clicks your ad, auto-tagging adds a bit of additional information—a parameter called GCLID, short for "Google Click Identifier"—to the URLs people click through. For example, if someone clicks on your ad for www.example.com, the final URL will look like www.example.com/?gclid=123xyz. If you have auto-tagging enabled and have a Google Analytics tag on your website, the GCLID is stored in a new Google Analytics cookie on your site’s domain. *There are websites that blocks aribitarary url params: turn off auto tagging -> ask them to allow -> turn it back on after testing*
+
 ### audiences
 - https://support.google.com/analytics/answer/9267572#zippy=%2Cin-this-article
 - it takes 24 ~ 48 hours to appear when creating a new audience
