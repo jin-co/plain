@@ -247,6 +247,8 @@ https://support.google.com/google-ads/answer/7381968?hl=en
 Gclid can consist of  up to 100 chars, and stands for “Google CLick ID” and it contains data of the ads clicked (including information on Google Ads account, campaign, ads and keywords). **Conversion linker and Global Site Tag will set *1st party cookies* on the domain using the gclid added to the URL.**
 
 ### cross domain setting
+https://support.google.com/google-ads/answer/7521212
+https://developers.google.com/tag-platform/devguides/cross-domain
 > with gtag
 `
 gtag( 'set', 'linker', {
