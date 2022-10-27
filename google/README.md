@@ -251,7 +251,7 @@ https://support.google.com/google-ads/answer/7521212
 https://developers.google.com/tag-platform/devguides/cross-domain
 > with gtag
 `
-gtag( 'set', 'linker', {
+gtag( 'set', 'linker', { // individual code
     'domains': [ 'exampleA.com', 'exampleB.com' ],
     'decorate_forms': true
 } );   
@@ -267,6 +267,7 @@ gtag('set', 'linker', {
 gtag('js', new Date());
 gtag('config', 'AW-XXXXXXXX');
 </script>
+<!-- To ensure set values are available for config commands and available to any dynamically loaded containers, add the set commands above the js command. --!>
 `
 
 ### To simulate glid (this cookies are only available in the domain in whick the 1st coolies are created)
