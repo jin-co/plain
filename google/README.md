@@ -269,6 +269,9 @@ gtag('config', 'AW-XXXXXXXX');
 </script>
 <!-- To ensure set values are available for config commands and available to any dynamically loaded containers, add the set commands above the js command. --!>
 `
+#### setting up and checking guide
+https://support.google.com/analytics/answer/10071811#setup
+https://support.google.com/tagmanager/answer/7549390
 
 ### To simulate glid (this cookies are only available in the domain in whick the 1st coolies are created)
 > 1) Add gclid to the LP URL ** &gclid=  / ?gclid=
