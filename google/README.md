@@ -21,6 +21,7 @@ https://support.google.com/analytics/answer/11396839?hl=en#zippy=%2Cglobal-site-
 
 ## cafe24
 ### to connect:
+https://serviceguide.cafe24.com/en_PH/SH.OP.SO.HQ.html
 
 ## iamweb
 ### to connect:
