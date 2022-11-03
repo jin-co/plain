@@ -280,6 +280,10 @@ https://support.google.com/tagmanager/answer/7549390
 > 3) You’ll see developer tools. Go to Application => Cookies => Select the domain (same as the one you see in the url) 
 > 4) Search by ‘gcl_aw’
 
+## Campaign
+### Shopping Ads
+> Shopping ads use your existing Merchant Center product data - not keywords - to decide how and where to show your ads
+
 # data retention
 https://support.google.com/analytics/answer/7667196
 > applys to user-level and event-level data associated with cookies, user-identifires, and advertising identifiers
@@ -357,3 +361,4 @@ https://developers.google.com/search/docs
 # Study materials
 - UA -> GA4 why data migration is impossible
 https://measureschool.com/ga4-migration/#:~:text=It%20is%20impossible%20to%20migrate%20historical%20data%20from,a%20different%20tool%20with%20a%20new%20data%20model.
+
